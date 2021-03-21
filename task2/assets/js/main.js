@@ -4,6 +4,8 @@ let sliders = document.querySelector(".sliders");
 let buttons = document.querySelectorAll(".ellipse");
 let counter = 0;
 let slider = document.querySelector(".sliders-container");
+let next = document.querySelector(".next");
+let prev = document.querySelector(".prev");
 var strX;
 
 window.addEventListener("load", hidPopupAfterTime);
@@ -28,6 +30,24 @@ buttons.forEach((itm, i) => {
     removeFillEliips();
     addFillEllipse();
   });
+});
+
+next.addEventListener("click", () => {
+  let num_slides = sliders.children.length - 1;
+  if (num_slides > counter) {
+    ++counter;
+    moveSliders();
+    removeFillEliips();
+    addFillEllipse();
+  }
+});
+prev.addEventListener("click", () => {
+  if (counter >= 1) {
+    --counter;
+    moveSliders();
+    removeFillEliips();
+    addFillEllipse();
+  }
 });
 
 function swipestart(e) {

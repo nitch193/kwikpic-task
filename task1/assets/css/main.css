@@ -616,10 +616,11 @@ form input::placeholder {
 .photograph {
   position: relative;
   margin-top: 20px;
+  margin-left: 15%;
   width: 100%;
 }
 form .container .photograph .photograph-img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 form .container button {
@@ -638,7 +639,7 @@ form .container .photograph button:first-of-type {
   height: 30px;
   position: absolute;
   bottom: 70px;
-  left: 50%;
+  left: 35%;
   transform: translateX(-50%);
 }
 form .container .photograph button:last-of-type {

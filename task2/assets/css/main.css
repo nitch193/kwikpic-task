@@ -207,6 +207,7 @@ main h3 {
   display: none;
 }
 main {
+  overflow-x: hidden;
   position: relative;
 }
 .main-slider-container {
